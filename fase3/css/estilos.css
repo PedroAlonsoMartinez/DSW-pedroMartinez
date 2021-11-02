@@ -1,0 +1,75 @@
+header{
+    background-color: #293B5F;
+    color: rgb(240, 237, 221);
+    text-align: center;
+}
+nav{
+    background-color: #47597E;
+    margin: 0;
+    width: auto;
+}
+section{
+    background-color: #DBE6FD;
+    grid-column: 1/4;
+}
+aside{
+    background-color: #B2AB8C;
+    grid-column: 4/5;
+}
+footer{
+    background-color: #293B5F;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+}
+/*para el menú desplegable*/
+
+#menu ul{
+    list-style: none; /*quita viñetas a lista*/
+    margin: 0;   /*quita márgenes*/
+    padding: 0;
+    
+      }
+
+    
+    #menu #item{
+    display: inline-block;   /*para menú horizontal*/
+    text-align: center;
+    
+}
+    
+    #menu #item a{
+        background-color: rgb(102, 105, 105);   /*color de fondo etiquetas a*/
+        color: rgb(235, 222, 222); /*color de la letra*/
+        padding: 10px  31px;   /*margen por dentro de la caja*/
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        
+    }
+     
+    #menu  #desple{
+        display: none;  /*para ocultar la caja*/
+        position: absolute; 
+        padding: 1px;
+        
+    }
+    
+    #menu  #item  a:hover{
+    background:steelblue ;  /*para cambiar color de la caja al colocar el puntero encima*/ 
+   
+    }
+    
+    #menu  #item:hover  #desple{
+      display: block; /*para mostrar la caja al colocar el puntero encima*/
+      position: absolute;
+      top: 30 px;
+      left: 0 px;
+      
+    }
+    footer{
+        color: rgb(247, 241, 241);
+    }
+   
